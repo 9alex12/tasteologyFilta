@@ -5,6 +5,7 @@
 html,
 body {
   @apply bg-white dark:bg-gray-950;
+  font-family: 'Open Sans';
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
