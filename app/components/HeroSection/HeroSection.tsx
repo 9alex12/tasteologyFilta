@@ -1,22 +1,26 @@
-import tamalImg from "public/tamal.jpeg";
-import ingredientsImg from "public/ingredients.jpeg";
-import eggsImg from "public/eggs.jpeg";
-
 const HeroSection = () => {
   return (
-    <header className="flex px-[147px] py-[120px]">
-      <div className="w-[62%] grid grid-cols-2 grid-rows-2 gap-[8px]">
+    <header className="flex gap-7 flex-col md:flex-row w-full md:max-w-6xl py-6 md:py-[120px] px-5">
+      <div className="md:flex-[4] grid grid-cols-2 grid-rows-2 gap-[8px] aspect-[9/8]">
         <img
-          src={tamalImg}
+          src="/tamal.jpeg"
           alt=""
-          className="h-full max-h-full row-span-2 col-span-1"
+          className="h-full max-h-full row-span-2 col-span-1 object-cover"
         />
-        <img src={ingredientsImg} alt="" className="h-full max-h-full" />
-        <img src={eggsImg} alt="" className="h-full max-h-full" />
+        <img
+          src="/ingredients.jpeg"
+          alt=""
+          className="h-full max-h-full object-cover"
+        />
+        <img
+          src="/eggs.jpeg"
+          alt=""
+          className="h-full max-h-full object-cover"
+        />
       </div>
-      <div className="w-[38%] px-[28px] font-light text-[#E1E2E2]">
-        <h2 className="text-3xl leading-[33px]">WHAT DOES COOKING MEAN?</h2>
-        <hr className="my-[30px]" />
+      <div className="md:flex-[2] font-light text-[#E1E2E2] flex-1">
+        <h1 className="text-3xl leading-[33px]">WHAT DOES COOKING MEAN?</h1>
+        <hr className="my-[30px] text-[#E1E2E2]" />
         <p className="text-xl">
           Is it simply applying heat to a food product? A way of making certain
           food safe to eat? Or a way to create flavour and make food more
